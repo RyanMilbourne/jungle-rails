@@ -1,0 +1,23 @@
+<div class="line-item_wrapper">
+
+  <div class="item_image" style="background-image: url('<%=line_item.product.image.tiny.url %>')"></div>
+
+  <div class="item_container">
+    <div class="item_description">
+      <h4 class="item_title"><%= line_item.product.name %></h4>
+      <p class="item_detail"><%=line_item.product.description %></p>
+    </div>
+
+    <div class="item_transaction">
+      <div>
+        <p class="item_detail">Quantity: <%= line_item.quantity %></p>
+        <p class="item_detail">Price: <%= humanized_money_with_symbol line_item.product.price %></p>
+      </div>
+      <div>
+        <p class="item_total">Total: <%= humanized_money_with_symbol line_item.product.price * line_item.quantity %></p>
+      </div>
+    </div>
+
+  </div>
+
+</div>

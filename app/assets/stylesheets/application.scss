@@ -111,3 +111,59 @@ form.button_to {
 .text-danger {
   color: #f38792 !important;
 }
+
+.line-item_wrapper{
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.item_container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr .25fr;
+}
+
+.item_title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.item_detail {
+  font-size: .8rem;
+  margin: 0;
+}
+
+.item_image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.item_description {
+  padding-right: 1rem;
+}
+
+.item_transaction {
+  width: 100%;
+  text-align: end;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.item_total {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.transaction_summary{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
