@@ -167,3 +167,33 @@ form.button_to {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+// admin related styling
+.admin-info_main-title{
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.admin-info_container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.admin-info_wrapper{
+  // background-color: orange;
+  padding: 1rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.admin-title{
+  font-size: 1.5rem;
+}
+
+.admin-detail{
+  font-size: 1rem;
+  margin: 0;
+}
