@@ -1,6 +1,7 @@
 class Admin::CategoriesController < ApplicationController
   def index
     @categories = Category.all
+    @total_categories = @categories.size
   end
 
   def new
@@ -8,7 +9,7 @@ class Admin::CategoriesController < ApplicationController
   end
 
   def create
-    @category = Catergory.new(category_params)
+    @category = Category.new(category_params)
 
     if @category.save
       redirect_to admin_categories_path, notice: "Category created!"
