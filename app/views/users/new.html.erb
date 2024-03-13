@@ -1,1 +1,17 @@
+<div class="user_authentication_form">
 <h1>Signup!</h1>
+
+<%= form_for :user, url: '/users' do |f| %>
+
+<div class="user_form">
+  <div class="user_name_form_wrapper"> 
+    <%= f.text_field :first_name, placeholder: 'First Name' %>
+    <%= f.text_field :last_name, placeholder: 'Last Name' %>
+  </div>
+  <%= f.text_field :email, placeholder: 'Email' %>
+  <%= f.password_field :password, placeholder: 'Password' %>
+  <%= f.password_field :password_confirmation, placeholder: 'Confirm Password' %>
+  <%= f.submit "Submit", class: "submit-button" %>
+</div>
+<% end %>
+</div>

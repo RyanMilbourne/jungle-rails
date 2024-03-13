@@ -21,6 +21,11 @@ Rails.application.routes.draw do
   # Route for the About Controller
   get 'about', to: 'about#index'
 
+  # Session Rotues
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
   # Users Routes
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
