@@ -1,3 +1,25 @@
 // Place all the styles related to the About controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.about-title{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.about-detail{
+  font-size: 1rem;
+  margin: 0;
+}
+
+.about-image{
+  margin-top: 1rem;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background: url('https://tinyurl.com/4uh5tv36');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
