@@ -2,7 +2,7 @@
 
 <h1>Login!</h1>
 
-<%= form_tag '/login' do%>
+<%= form_tag '/login', class: 'user_credential_form' do%>
 
 <div class="user_form">
   <%= text_field_tag :email, nil, placeholder: 'Email' %>
