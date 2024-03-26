@@ -1,4 +1,4 @@
-describe("Jungle App - Product Details", () => {
+describe("Jungle App - Add-to-cart", () => {
   beforeEach(() => {
     cy.visit("/");
   });
